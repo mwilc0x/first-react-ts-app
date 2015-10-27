@@ -14,8 +14,14 @@
   "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.13.3",
+    "json-loader": "^0.5.3",
+    "react-transform-hmr": "^1.0.1",
     "ts-loader": "^0.6.0",
     "tsd": "^0.6.5",
-    "typescript": "^1.6.2"
+    "typescript": "^1.6.2",
+    "webpack": "^1.12.2",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.4.1"
   }
 }
