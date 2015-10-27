@@ -1,10 +1,15 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import {render} from 'react-dom';
 import {Results} from './components/Results';
 import {Search} from './components/Search';
-import data from './data.json';
+var data = require('./data.json');
 
-class App extends Component {
+interface P {}
+interface S {
+  results: Array<string>
+}
+
+class App extends React.Component<P, S> {
 
   constructor() {
     super();
@@ -34,8 +39,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>My First React App</h1>
-        <Search onChange={this._searchChange.bind(this)} />
+        <h1>My First React TypeScript App</h1>
+        <Search update={this._searchChange.bind(this)} />
         <Results results={this.state.results} />
       </div>
     );
