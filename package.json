@@ -1,7 +1,7 @@
 {
-  "name": "first-react-app",
+  "name": "first-react-ts-app",
   "version": "1.0.0",
-  "description": "first react app",
+  "description": "first react ts app",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
@@ -23,5 +23,9 @@
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   }
 }
