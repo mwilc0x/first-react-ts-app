@@ -4,6 +4,7 @@
   "description": "first react ts app",
   "main": "index.js",
   "scripts": {
+    "typings": "typings install",
     "start": "node server.js"
   },
   "keywords": [
@@ -18,8 +19,8 @@
     "json-loader": "^0.5.3",
     "react-transform-hmr": "^1.0.1",
     "ts-loader": "^0.6.0",
-    "tsd": "^0.6.5",
     "typescript": "^1.6.2",
+    "typings": "^2.1.1",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"

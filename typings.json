@@ -1,0 +1,8 @@
+{
+  "name": "first-react-ts-app",
+  "globalDependencies": {
+    "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#35ba1a07e1ddafef621636fc8d0714f6f70ca479",
+    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react-dom/react-dom.d.ts#35ba1a07e1ddafef621636fc8d0714f6f70ca479",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#35ba1a07e1ddafef621636fc8d0714f6f70ca479"
+  }
+}
