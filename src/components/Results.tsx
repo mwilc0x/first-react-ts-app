@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { PropTypes } from 'prop-types';
 
 interface P {
   results: Array<string>;
@@ -25,7 +26,7 @@ class Results extends React.Component<P, S> {
 }
 
 Results.propTypes = {
-  results: React.PropTypes.array.isRequired
+  results: PropTypes.array.isRequired
 }
 
 export {Results};

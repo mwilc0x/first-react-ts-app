@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { PropTypes } from 'prop-types';
 
 interface P {
   update: React.FormEventHandler;
@@ -19,7 +20,7 @@ class Search extends React.Component<P, S> {
 }
 
 Search.propTypes = {
-  update: React.PropTypes.func.isRequired
+  update: PropTypes.func.isRequired
 }
 
 export {Search};
