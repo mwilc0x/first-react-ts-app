@@ -1,26 +1,16 @@
 import * as React from 'react';
-import { PropTypes } from 'prop-types';
+import * as PropTypes from 'prop-types';
 
-interface P {
-  update: React.FormEventHandler;
+interface Props {
+  update: React.FormEventHandler<any>;
 }
-interface S {}
 
-class Search extends React.Component<P, S> {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <input onChange={this.props.update} />
-    );
-  }
-}
+const Search: React.SFC<Props> = (props: Props) => (
+  <input onChange={props.update} />
+);
 
 Search.propTypes = {
   update: PropTypes.func.isRequired
-}
+};
 
-export {Search};
+export { Search };

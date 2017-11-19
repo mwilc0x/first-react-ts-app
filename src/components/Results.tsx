@@ -1,32 +1,22 @@
 import * as React from 'react';
-import { PropTypes } from 'prop-types';
+import * as PropTypes from 'prop-types';
 
-interface P {
+interface Props {
   results: Array<string>;
 }
-interface S {}
 
-class Results extends React.Component<P, S> {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
-        <ul>
-          {this.props.results.map((result, i) => (
-            <li key={i}>{result}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-}
+const Results: React.SFC<Props> = (props: Props) => (
+  <div>
+    <ul>
+      {props.results.map((result, i) => (
+        <li key={i}>{result}</li>
+      ))}
+    </ul>
+  </div>
+);
 
 Results.propTypes = {
   results: PropTypes.array.isRequired
-}
+};
 
-export {Results};
+export { Results };
