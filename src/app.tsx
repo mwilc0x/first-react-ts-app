@@ -1,22 +1,18 @@
 import * as React from 'react';
-import {render} from 'react-dom';
-import {Results} from './components/Results';
-import {Search} from './components/Search';
-var data = require('./data.json');
+import { render } from 'react-dom';
 
-interface P {}
-interface S {
+import { Results } from './components/Results';
+import { Search } from './components/Search';
+const data = require('./data.json');
+
+interface Props {}
+interface State {
   results: Array<string>
 }
 
-class App extends React.Component<P, S> {
+class App extends React.Component<Props, State> {
 
-  constructor() {
-    super();
-    this.state = {
-      results: []
-    }
-  }
+  state = { results: [] }
 
   _searchChange(e) {
     var results = [];
